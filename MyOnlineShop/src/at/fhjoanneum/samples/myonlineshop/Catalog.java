@@ -1,17 +1,13 @@
 package at.fhjoanneum.samples.myonlineshop;
 
-import java.util.ArrayList;
-
 public class Catalog {
-	private ArrayList<Article> _catalog = new ArrayList<Article>();
+	public ArticleGroup BOOKS = new ArticleGroup("Books");
+	public ArticleGroup MUSIC = new ArticleGroup("MUSIC");
+	public ArticleGroup TOYS = new ArticleGroup("TOYS");
 	
-	public void add(Article article)
-	{
-		_catalog.add(article);
-	}
+	private Article[] _catalog = {
+			new Article("Java Language - The Reference Book", BOOKS, 35.60F),
+			new Article("C Language - The Reference Book", BOOKS, 23.40F)
+	};
 	
-	public void remove(Article article)
-	{
-		_catalog.remove(article);
-	}
 }
