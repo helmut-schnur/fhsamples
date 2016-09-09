@@ -1,4 +1,4 @@
-package at.fh.joanneum.myonlineshop;
+
 
 public class Main {
 
