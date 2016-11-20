@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="OnlineShop2Web">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="OnlineShop2Database.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/OnlineShop2Database/OnlineShop2Database">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="OnlineShop2BusinessLogic.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/OnlineShop2BusinessLogic/OnlineShop2BusinessLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="OnlineShop2Web"/>
+        <property name="java-output-path" value="/OnlineShop2Web/build/classes"/>
+    </wb-module>
+</project-modules>
